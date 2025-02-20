@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup": "ts-node src/setup.ts",
+    "start": "ts-node src/server.ts",
+    "bot": "ts-node src/bot.ts"
   },
   "keywords": [],
   "author": "",
@@ -13,16 +16,19 @@
   "dependencies": {
     "@jup-ag/api": "^6.0.39",
     "@jup-ag/core": "^4.0.0-beta.21",
+    "@solana/spl-token": "^0.4.12",
     "@solana/web3.js": "^1.98.0",
     "axios": "^1.7.9",
     "dotenv": "^16.4.7",
     "drizzle-orm": "^0.39.3",
     "express": "^4.21.2",
+    "jsbi": "^4.3.0",
     "pg": "^8.13.3",
     "pm2": "^5.4.3",
     "winston": "^3.17.0"
   },
   "devDependencies": {
+    "@types/bs58": "^4.0.4",
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.4",
     "@types/pg": "^8.11.11",
